@@ -1,0 +1,10 @@
+{
+    "type": "alert",
+    "source": "edge",
+    "id": "edge-001",
+    "data": {
+        "type": "ENGINE_FAILURE",
+        "priority": "critical",
+        "alert": true
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "type": "beacon",
+    "source": "edge",
+    "id": "edge-001",
+    "data": {
+        "timestamp": "1681870109",
+        "location": {
+            "lat": 39.168408,
+            "lng": -86.499282
+        },
+        "make": "Nissan"
+    }
+}

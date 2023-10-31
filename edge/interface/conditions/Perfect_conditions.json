@@ -1,0 +1,39 @@
+{
+    "display_columns": {
+    "_0": "Engine Coolant Temperature [C]",
+    "_1": "Intake Manifold Absolute Pressure [kPa]",
+    "_2": "Engine RPM [RPM]",
+    "_3": "Vehicle Speed Sensor [km/h]",
+    "_4": "Intake Air Temperature [C]",
+    "_5": "Air Flow Rate from Mass Flow Sensor [g/s]",
+    "_6": "Absolute Throttle Position [%]",
+    "_7": "Ambient Air Temperature [C]",
+    "_8": "Accelerator Pedal Position D [%]",
+    "_9": "Accelerator Pedal Position E [%]"
+    },
+    "entire_columns": {
+    "_0": "Engine Coolant Temperature [C]",
+    "_1": "Intake Manifold Absolute Pressure [kPa]",
+    "_2": "Engine RPM [RPM]",
+    "_3": "Vehicle Speed Sensor [km/h]",
+    "_4": "Intake Air Temperature [C]",
+    "_5": "Air Flow Rate from Mass Flow Sensor [g/s]",
+    "_6": "Absolute Throttle Position [%]",
+    "_7": "Ambient Air Temperature [C]",
+    "_8": "Accelerator Pedal Position D [%]",
+    "_9": "Accelerator Pedal Position E [%]",
+    "_10": "Tire Pressure (Front Left) [kPa]",
+    "_11": "Tire Pressure (Front Right) [kPa]",
+    "_12": "Tire Pressure (Rear Left) [kPa]",
+    "_13": "Tire Pressure (Rear Right) [kPa]",
+    "_14": "Brake Fluid Level [%]",
+    "_15": "Brake Pad Thickness [mm]"
+    },
+    "Brake_fluid": false,
+    "Brake_pad": false,
+    "Engine_heating": false,
+    "Crash": false,
+    "Speeding": false,
+    "file_path": "interface/OBD-II-Dataset/2017-07-06_Seat_Leon_KA_KA_Normal.csv",
+    "id": "edge-001"
+}

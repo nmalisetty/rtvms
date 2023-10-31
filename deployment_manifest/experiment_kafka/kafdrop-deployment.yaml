@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kafdrop
+  namespace: rtvms
+spec:
+  selector:
+    matchLabels:
+      app: kafdrop
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: kafdrop
+    spec:
+      containers:
+        - name: kafdrop
+          image: obsidiandynamics/kafdrop:latest
+          ports:
+            - name: http
+              containerPort: 9000
+          env:
+            - name: KAFKA_BROKERCONNECT
+              value: "kafka:9092"

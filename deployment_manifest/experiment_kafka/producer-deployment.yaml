@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kafka-producer
+  namespace: rtvms
+spec:
+  selector:
+    matchLabels:
+      app: kafka-producer
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: kafka-producer
+    spec:
+      containers:
+        - name: kafka-producer
+          image: nmalisetty/kafka-producer-service:V1
+          env:
+            - name: KAFKA_SERVER
+              value: kafka
+            - name: KAFKA_TOPIC_NAME
+              value: test-topic
+            - name: KAFKA_PORT
+              value: "9092"

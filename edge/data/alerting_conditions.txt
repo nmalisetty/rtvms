@@ -1,0 +1,36 @@
+1. Brake failure:
+following brake-related columns to the dataset:
+
+    Brake Pad Thickness [mm]
+    Brake Rotor Condition [mm]
+    Brake Fluid Level [%]
+
+With these columns, we can classify brake failure as follows:
+
+    Brake Failure = 1 if any of the following conditions are met:
+        Brake Pad Thickness < 2mm
+        Brake Rotor Condition < 1.5mm
+        Brake Fluid Level < 25%
+		
+		
+    Brake Pad Thickness [mm]: This column would measure the thickness of the brake pads, which are an essential component of the braking system. The typical range for brake pad thickness is around 8-12 mm, depending on the make and model of the vehicle.
+
+    Brake Rotor Thickness [mm]: This column would measure the thickness of the brake rotors, which are the discs that the brake pads clamp onto to stop the vehicle. The typical range for brake rotor thickness is around 25-30 mm, depending on the make and model of the vehicle.
+
+    Brake Fluid Level [ml]: This column would measure the level of brake fluid in the vehicle's brake fluid reservoir. The typical range for brake fluid level is around 300-500 ml, depending on the make and model of the vehicle.
+
+2. Engine failure:
+
+The data provided in the dataset can help in detecting some symptoms of engine failure, but it may not be sufficient to predict an engine failure with a high degree of accuracy.
+
+However, some indicators of engine failure that can be detected from the given dataset include:
+
+    Engine Coolant Temperature: If the engine coolant temperature is too high or too low, it can cause the engine to overheat or not function properly, leading to engine failure.
+
+    Engine RPM: If the engine RPM is too high or too low, it can cause stress on the engine and its components, leading to engine failure.
+
+    Intake Air Temperature: If the intake air temperature is too high or too low, it can affect the air/fuel mixture and cause engine problems, potentially leading to engine failure.
+
+    Air Flow Rate from Mass Flow Sensor: A decrease in air flow rate from the mass flow sensor can indicate a clogged air filter, which can lead to engine failure if not addressed.
+
+    Ambient Air Temperature: If the ambient air temperature is too high, it can cause the engine to overheat and fail.

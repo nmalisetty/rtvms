@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kafdrop
+  namespace: rtvms
+spec:
+  selector:
+    app: kafdrop
+  type: NodePort
+  ports:
+    - name: http
+      port: 9000
+      targetPort: 9000

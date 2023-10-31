@@ -1,0 +1,15 @@
+import os
+from enum import Enum
+
+
+class EnvironmentVariables(str, Enum):
+    KAFKA_ALERT_TOPIC_NAME = 'KAFKA_ALERT_TOPIC_NAME'
+    KAFKA_SERVER = 'KAFKA_SERVER'
+    KAFKA_PORT = 'KAFKA_PORT'
+    ALERTING_SERVICE_SERVER = 'ALERTING_SERVICE_SERVER'
+    ALERTING_SERVICE_PORT = 'ALERTING_SERVICE_PORT'
+    ALERTING_SERVICE_ENDPOINT = 'ALERTING_SERVICE_ENDPOINT'
+    ALERTING_SERVICE_ENDPOINT_TEST = 'ALERTING_SERVICE_ENDPOINT_TEST'
+
+    def get_env(self, variable=None):
+        return os.environ.get(self, variable)

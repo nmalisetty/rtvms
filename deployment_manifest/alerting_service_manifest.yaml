@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: alerting-service
+  namespace: rtvms
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: alertingService
+  template:
+    metadata:
+      labels:
+        app: alertingService
+    spec:
+      dnsPolicy: ClusterFirst
+      containers:
+        - name: alertings-service-container
+          image: nmalisetty/alerting-service:V1
+          ports:
+            - containerPort: 4000

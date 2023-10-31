@@ -1,0 +1,39 @@
+{
+    "display_columns": {
+    "_0": "Engine Coolant Temperature [C]",
+    "_1": "Intake Manifold Absolute Pressure [kPa]",
+    "_2": "Engine RPM [RPM]",
+    "_3": "Vehicle Speed Sensor [km/h]",
+    "_4": "Intake Air Temperature [C]",
+    "_5": "Air Flow Rate from Mass Flow Sensor [g/s]",
+    "_6": "Absolute Throttle Position [%]",
+    "_7": "Ambient Air Temperature [C]",
+    "_8": "Accelerator Pedal Position D [%]",
+    "_9": "Accelerator Pedal Position E [%]"
+},
+    "entire_columns": {
+    "_0": "Engine Coolant Temperature [C]",
+    "_1": "Intake Manifold Absolute Pressure [kPa]",
+    "_2": "Engine RPM [RPM]",
+    "_3": "Vehicle Speed Sensor [km/h]",
+    "_4": "Intake Air Temperature [C]",
+    "_5": "Air Flow Rate from Mass Flow Sensor [g/s]",
+    "_6": "Absolute Throttle Position [%]",
+    "_7": "Ambient Air Temperature [C]",
+    "_8": "Accelerator Pedal Position D [%]",
+    "_9": "Accelerator Pedal Position E [%]",
+    "_10": "Tire Pressure (Front Left) [kPa]",
+    "_11": "Tire Pressure (Front Right) [kPa]",
+    "_12": "Tire Pressure (Rear Left) [kPa]",
+    "_13": "Tire Pressure (Rear Right) [kPa]",
+    "_14": "Brake Fluid Level [%]",
+    "_15": "Brake Pad Thickness [mm]"
+},
+    "Brake_fluid": true,
+    "Brake_pad": true,
+    "Engine_heating": false,
+    "Crash": false,
+    "Speeding": false,
+    "file_path": "interface/OBD-II-Dataset/2018-03-23_Seat_Leon_S_RT_Stau.csv",
+    "id": "edge-002"
+}

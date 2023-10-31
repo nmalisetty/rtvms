@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kafka-consumer
+  namespace: rtvms
+spec:
+  selector:
+    matchLabels:
+      app: kafka-consumer
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: kafka-consumer
+    spec:
+      containers:
+        - name: kafka-consumer
+          image: nmalisetty/kafka-consumer-service:V1
+          env:
+            - name: KAFKA_SERVER
+              value: kafka
+            - name: KAFKA_TOPIC_NAME
+              value: test-topic
+            - name: KAFKA_PORT
+              value: "9092"
